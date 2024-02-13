@@ -13,7 +13,7 @@ export class AtmusZapModule {
       module: AtmusZapModule,
       imports: [
         HttpModule.register({
-          baseURL: 'https://wa.atmuszap.com.br',
+          baseURL: options.apiUrl || 'https://wa.atmuszap.com.br',
           headers: {
             Accept: 'application/json',
             apikey: options.apiKey,
