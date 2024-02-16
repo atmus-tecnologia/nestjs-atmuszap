@@ -3,7 +3,7 @@ import { DynamicModule, Global, Module, Provider } from '@nestjs/common';
 import { AtmusZapService } from './atmuszap.service';
 import { ATMUSZAP_CONFIG_OPTIONS } from './constants';
 import { AtmusZapModuleAsyncOptions, AtmusZapModuleOptions } from './module-options.interface';
-import { InstancesService, WebhooksService, WebsocketsService } from './services';
+import { ChatsService, InstancesService, WebhooksService, WebsocketsService } from './services';
 
 @Global()
 @Module({})
@@ -24,6 +24,7 @@ export class AtmusZapModule {
         { provide: ATMUSZAP_CONFIG_OPTIONS, useValue: options },
         AtmusZapService,
         InstancesService,
+        ChatsService,
         WebhooksService,
         WebsocketsService,
       ],
