@@ -1,6 +1,6 @@
 {
   "name": "@atmus/nestjs-atmuszap",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "NestJS - AtmusZap integration",
   "author": "Felipe Medeiros <medeiros.dev@gmail.com>",
   "license": "MIT",
